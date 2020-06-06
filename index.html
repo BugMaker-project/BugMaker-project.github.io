@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang=zh_cn>
 
 <head>
     <meta charset="utf-8">
@@ -13,17 +13,38 @@
 	<link href="Bootstrap/css/bootstrap-reboot.min.css" rel=stylesheet>
 	<link href="Bootstrap/css/bootstrap.min.css" rel=stylesheet>
 	<link href="personal/Font/biliw/biliw.css" rel=stylesheet>
+	<link href="personal/Font/Wenrou/温柔且甜腻.css" rel=stylesheet>
+	<script src="personal/JS/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="layui/layui.all.js" type="text/javascript"></script>
 	<script src="Bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 	<script src="Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="personal/JS/main.js" type="text/javascript"></script>
-	<script type="application/javascript">
+	<script type="application/javascript" id="Init">
 		var layer = layui.layer;
+		var device = layui.device();
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match("trident")){
+			layer.msg("DONOT USE IE!别用IE");
+		}
+		else  if (ua.match(/microMessenger/i) || ua.match(/oppo/i) 
+			|| ua.match(/iphone/i) || ua.match(/ipad/i || ua.match(/opera/i))){
+			layer.msg("Please use COMPUTER.请用电脑谢谢.");
+		}
+		else{
+			layer.msg("Enjoy yourself.开始享受自我吧~");
+		}
+		var loader = layer.load(2,{time:5*1000}); 
+		layer.close(loader)
 	</script>
 </head>
 <body>
 	<div align="center">
 		<HR>
-		<h1 style="font-family:biliw" id="title1" onClick="window.location ='index.html'>小蛾子制造商</h1>
+		<h1 style="font-family:biliw" id="title1" onClick="window.location ='index.html'">小蛾子制造商Home.
+		</h1> 
+		<h2 style="font-family:温柔且甜腻" id="title2" onClick="window.location ='index.html'">
+			Bug-Maker Project
+		</h2>
 	</div>
 </body>
 </html>
