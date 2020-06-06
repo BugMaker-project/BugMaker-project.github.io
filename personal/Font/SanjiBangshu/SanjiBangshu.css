@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "SanjiBangshu";
+  src: url("SanjiBangshu.woff2") format("woff2"),
+       url("SanjiBangshu.woff") format("woff"),
+       url("SanjiBangshu.ttf") format("truetype"),
+       url("SanjiBangshu.eot") format("embedded-opentype"),
+       url("SanjiBangshu.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
