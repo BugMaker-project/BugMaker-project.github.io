@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang=zh_cn>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bug-MAKER</title>
+	<link href="layui/css/layui.css" rel="stylesheet">
+	<link href="personal/favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="Bootstrap/css/bootstrap-grid.min.css" rel=stylesheet>
+	<link href="Bootstrap/css/bootstrap-reboot.min.css" rel=stylesheet>
+	<link href="Bootstrap/css/bootstrap.min.css" rel=stylesheet>
+	<link href="personal/Font/biliw/biliw.css" rel=stylesheet>
+	<script src="personal/JS/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="layui/layui.all.js" type="text/javascript"></script>
+	<script src="Bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<script src="Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="personal/JS/main.js" type="text/javascript"></script>
+	<script type="application/javascript" id="Init">
+		var element = layui.element;
+		var layer = layui.layer;
+		var slider = layui.slider;
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match("trident")) {
+			layer.msg("DONOT USE IE!别用IE");
+		} else if (ua.match(/microMessenger/i) || ua.match(/oppo/i) ||
+			ua.match(/iphone/i) || ua.match(/ipad/i) || ua.match(/opera/i)) {
+			layer.msg("Please use COMPUTER.请用电脑谢谢.");
+		} else {
+			layer.msg("Enjoy yourself.开始享受自我吧~");
+		}
+		function videos(){
+			layer.open({
+				type: 2,
+				title: false,
+				closeBtn: 0,
+				shadeClose: true,
+				maxmin:true,
+				area:["50%","50%"],
+				content: "personal/Media/Meetings.mp4"
+			});}
+		</script>
+		<style type="text/css">
+			body{
+				font-family:biliw;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="layui-nav" style="font-family:biliw;">
+			<li class="layui-nav-item">
+				<a href="US.html">
+					<img src="personal/Media/Head.jpeg" class="layui-nav-img">关于我们
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="index.html"> 主页</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="Zhaopin.html">招兵买马</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="Thanks.html">感谢</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="Download.html">下载</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="Timeline.html">时间线</a>
+			</li>
+		</li>
+		<li class="layui-nav-item">
+			<a href="Release.html">各种计划</a>
+		</li>
+	</ul>
+	<div style="margin-left:40px;font-family:biliw; ">
+		<ul class="layui-timeline">
+			<li class="layui-timeline-item">
+				<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+				<div class="layui-timeline-content layui-text">
+					<h3 class="layui-timeline-title">August.2020</h3>
+					<p>
+						一次会议.简单地说一下计划和分工
+						<br>平台：腾讯会议
+						<br>要求：尽量全部到场
+						<br>预发布:
+						<button class="layui-btn layui-btn-primary layui-btn-radius"
+						 onclick="videos()">
+							Click!
+						</button>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
