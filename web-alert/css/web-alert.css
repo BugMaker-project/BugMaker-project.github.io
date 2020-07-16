@@ -1,0 +1,56 @@
+/*
+	Author:	Tzboy;
+*/
+.web-alert-disk,.web-alert-disk *{border:0px;padding: 0px;margin: 0px;font-size: 14px;transition: all 0.8s ease;}
+
+.web-alert-disk{position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;background-color: rgba(0,0,0,0.6);z-index: 99999;display: none;}
+.web-alert-disk.show{display: inline-block;}
+
+
+/* model */
+.web-alert-disk > .web-alert-cont{position: fixed;width:50%;height: 60%;top: 20%;left: 25%;background-color: #fff;border-radius: 3px;box-sizing: border-box;box-shadow: 3px 3px 20px #545454;padding: 15px 0px;overflow: hidden;}
+.web-alert-disk > .web-alert-cont > .web-alert-cont-title{position: absolute;top: 0px;left: 0px;width: 100%;height: auto;display: inline-block;text-align: left;padding: 8px 10px;background-color: #fff;box-sizing: border-box;letter-spacing: 1px;color: #3e3e3e;;box-shadow: -1px 0px 10px #e3e3e3;}
+.web-alert-disk > .web-alert-cont > .web-alert-cont-center{position: absolute;height: calc(100% - 36px - 40px);width: 100%;overflow: hidden;top: 36px;box-sizing: border-box;padding: 20px;}
+.web-alert-disk > .web-alert-cont > .web-alert-cont-bottom{position: absolute;bottom: 0px;left: 0px;width: 100%;height: auto;display: inline-block;text-align: center;padding: 5px 10px;background-color: #fff;box-sizing: border-box;text-align: right;box-shadow: -1px 0px 10px #e3e3e3;}
+.web-alert-disk > .web-alert-cont > .web-alert-cont-bottom .web-alert-btn{display: inline-block;padding: 6px 20px;border-radius: 3px;text-align: center;margin-left: 15px;cursor: pointer;opacity: 0.9;font-size: 13px;}
+.web-alert-disk > .web-alert-cont > .web-alert-cont-bottom .web-alert-btn:hover{opacity: 1;}
+.web-alert-disk > .web-alert-cont > .web-alert-cont-bottom .web-alert-btn.cancel{color: #808080;background-color: #bfbfbf;}
+.web-alert-disk > .web-alert-cont > .web-alert-cont-bottom .web-alert-btn.confim{color: #fff;background-color: #2a69b7;}
+
+
+/* msg */
+.web-alert-disk.web-alert-msg{position: fixed;left: 0px;top: -10%;overflow: initial;width: 100%;text-align: center;background-color: unset;height: unset;transition: all 0.3s linear 0s;}
+/*.web-alert-disk.web-alert-msg.show{top: 0px;}*/
+.web-alert-disk.web-alert-msg > .web-alert-msg-cont{background-color: #4ab2e4;width: auto;display: inline-block;padding: 7px 25px;margin: 5px 0px;border-radius: 2px;color: #fff;box-shadow: 3px 3px 10px #3e3e3e;max-width: 80%;}
+.web-alert-disk.web-alert-msg > .web-alert-msg-cont .web-alert-msg-tips{text-align: left;font-size: 0px;}
+.web-alert-disk.web-alert-msg > .web-alert-msg-cont .web-alert-msg-tips .icon,.web-alert-disk.web-alert-msg > .web-alert-msg-cont .web-alert-msg-tips .msg{display: inline-block;vertical-align: middle;}
+.web-alert-disk.web-alert-msg > .web-alert-msg-cont .web-alert-msg-tips .icon{width: 18px;height: 18px;margin-right: 10px;}
+.web-alert-disk.web-alert-msg > .web-alert-msg-cont .web-alert-msg-tips .msg{max-width: calc(100% - 18px - 10px);font-size: 14px;}
+
+
+
+.web-alert-disk.web-alert-loading{width: 100%;text-align: center;}
+.web-alert-disk.web-alert-loading > .web-alert-loading-cont{position: relative;background-color: #fff;width: auto;display: inline-block;padding: 10px 10px;margin: 5px 0px;border-radius: 100%;color: #111;box-shadow: 3px 3px 10px #3e3e3e;max-width: 80%;margin-top: 50px;}
+.web-alert-disk.web-alert-loading > .web-alert-loading-cont > .load-line{position: absolute;height: 50px;width: 2px;left: calc(50% - 1px);top: -50px;background-color: #fff;}
+.web-alert-disk.web-alert-loading > .web-alert-loading-cont [class*="loader-"] {display: inline-block;width: 10px;height: 10px;color: inherit;vertical-align: middle;pointer-events: none;}
+.web-alert-disk.web-alert-loading > .web-alert-loading-cont .loader-01 {border: 5px solid transparent;border-left-color: currentcolor;border-right-color: currentcolor;border-radius: 50%;-webkit-animation: 1s loader-01 linear infinite;animation: 1s loader-01 linear infinite;}
+@-webkit-keyframes loader-01 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader-01 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
