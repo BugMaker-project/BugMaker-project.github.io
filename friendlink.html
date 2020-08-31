@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="zui/css/zui.min.css" type="text/css" rel="stylesheet">
+    <link href="zui/css/zui-theme.min.css" type="text/css" rel="stylesheet">
+    <link href="layer/theme/default/layer.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="text-align: center">
+        <ul class="nav nav-simple">
+            <li><a href="index.html">首页</a></li>
+            <li>
+                <a onclick="layer.open({type: 2,area: ['100%', '100%'],title:'关于我们',fixed: false, maxmin: true,content: 'ourteam.html', anim:1}); ">我们</a>
+            </li>
+            <li class="active"><a href="friendlink.html">友情链接</a></li>
+        </ul>
+    </div>
+    <div style="margin-left: 10px;margin-right: 10px;">
+        <h1 style="align-self: center;">友情链接</h1>
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <p>添加友链请在
+                <a data-toggle="tooltip" title="记得添加友链，我py会抽查的" href="https://github.com/bugmaker-project/bugmaker-project.github.io">
+                    <i class="icon icon-github"></i>github
+                </a>
+                上给我提issues.看到后会及时修改.
+            </p>
+        </div>
+        <div class="list-group">
+            <a href="https://lzhbhlrPython.github.io" class="list-group-item">
+                <h4 class="list-group-item-heading">py的blogggg</h4>
+                <p class="list-group-item-text text-muted">一个热爱各种编程语言的程序员py的博客(Author of This Website)</p>
+            </a>
+            <a href="https://EightDirection.github.io" class="list-group-item">
+                <h4 class="list-group-item-heading">八方的专题介绍页</h4>
+                <p class="list-group-item-text text-muted">本团队美工兼老大Jason的个人游戏项目介绍页，由py完成</p>
+            </a>
+            <a href="https://begonia1005.github.io/" class="list-group-item">
+                <h4 class="list-group-item-heading">卑微海棠的博客</h4>
+                <p class="list-group-item-text text-muted">团队中海棠大佬的博客，也是基于Jekyll Next，同八方</p>
+            </a>
+            <a href="https://afdian.net/@Natural-Disaster" class="list-group-item">
+                <h4 class="list-group-item-heading">天灾的爱发电</h4>
+                <p class="list-group-item-text text-muted">天灾是我们现在的开发中项目，也是我们的处女作。现在需要一点经费，拜托啦~</p>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="personal/jquery.min.js " type="text/javascript "></script>
+<script src="zui/js/zui.min.js " type="text/javascript "></script>
+<script src="layer/layer.js " type="text/javascript "></script>
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
+</html>
